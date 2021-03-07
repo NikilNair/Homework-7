@@ -20,5 +20,11 @@ class TestCase(unittest.TestCase):
         self.assertEqual(fizzbuzz.program(20), "Buzz")
         self.assertEqual(fizzbuzz.program(25), "Buzz")
 
+    def test_fizz_buzz(self):
+        self.assertEqual(fizzbuzz.program(15), "FizzBuzz")
+        self.assertEqual(fizzbuzz.program(30), "FizzBuzz")
+        self.assertEqual(fizzbuzz.program(45), "FizzBuzz")
+        self.assertEqual(fizzbuzz.program(60), "FizzBuzz")
+
 if __name__ == '__main__':
     unittest.main()
